@@ -1,0 +1,21 @@
+cat >> .gitignore <<'EOF'
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Maven build output
+target/
+dependency-reduced-pom.xml
+
+# local test inputs/outputs
+input/
+output/
+EOF
+
+echo "vnode.pem" >> .gitignore
+echo "*.pem" >> .gitignore
+# never commit keys
+*.pem
